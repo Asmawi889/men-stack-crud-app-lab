@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= plant.name %></title>
+</head>
+<body>
+    <h1><%= plant.name %></h1>
+    <p>Type: <%= plant.type %></p>
+    <p>Water Needs: <%= plant.waterNeeds %></p>
+    <a href="/plants/<%= plant._id %>/edit">Edit</a>
+    <form 
+    action="/plants/<%= plant._id %>/=DELETE" 
+    method="POST">
+    <button type="submit" >Delete</button>
+</form>
+   
+    <a href="/plants">Back to List</a>
+</body>
+</html>
+   

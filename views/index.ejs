@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Plants</title>
+</head>
+<body>
+    <h1>All Plants</h1>
+    <a href="/plants/new">Add New Plant</a>
+    <ul>
+        <% plants.forEach(plant => { %>
+            <li>
+                <a href="/plants/<%= plant._id %>"><%= plant.name %></a>
+                
+            </li>
+           
+        <% }) %>
+
+    </ul>
+</body>
+</html>
